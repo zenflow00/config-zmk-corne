@@ -80,8 +80,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(Z) LC(Y)>,
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         lower_layer {
@@ -92,10 +92,10 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&kp RCTRL  &trans  &trans  &trans    &trans     &trans                                 &trans     &trans    &trans    &trans        &trans     &trans
-&tog 1     &trans  &trans  &trans    &trans     &trans                                 &trans     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans     &trans  &trans  &trans    &trans     &trans   &kp K_MUTE  &kp K_PLAY_PAUSE  &trans     &trans    &trans    &trans        &trans     &trans
-                           &kp LALT  &kp RCTRL  &kp DEL                                &kp ENTER  &kp ESC   &kp RALT
+&kp RCTRL  &trans      &trans        &trans        &trans        &trans                                      &trans     &trans    &trans    &trans        &trans     &trans
+&tog 1     &trans      &trans        &trans        &trans        &trans                                      &trans     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp K_MUTE  &kp K_PLAY_PAUSE  &trans     &trans    &trans    &trans        &trans     &trans
+                                     &kp LALT      &kp RCTRL     &kp DEL                                     &kp ENTER  &kp ESC   &kp RALT
             >;
 
             sensor-bindings =
@@ -111,10 +111,10 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&trans         &kp EXCL          &kp AT          &kp HASH          &kp DLLR              &kp PRCNT                              &kp CARET          &kp AMPS               &kp UNDER             &kp PLUS                  &kp ASTERISK      &kp EQUAL
-&kp LESS_THAN  &kp SINGLE_QUOTE  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES                      &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE           &kp SINGLE_QUOTE  &kp GREATER_THAN
-&bt BT_CLR     &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3          &bt BT_SEL 4       &none  &bootloader  &kp PRINTSCREEN    &kp PAUSE_BREAK        &kp C_AL_TEXT_EDITOR  &kp C_AL_GRAPHICS_EDITOR  &kp PIPE          &kp TILDE
-                                                 &trans            &trans                &trans                                 &trans             &trans                 &trans
+&kp TAB    &kp EXCL      &kp AT  &kp HASH  &kp DLLR      &kp PRCNT                 &kp CARET       &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp SINGLE_QUOTE
+&kp ESC    &kp N1        &kp N2  &kp N3    &kp NUMBER_4  &kp N5                    &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp GRAVE
+&kp LSHFT  &kp NUMBER_6  &kp N7  &kp N8    &kp N9        &kp N0     &none  &trans  &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &kp TILDE
+                                 &kp LWIN  &trans        &kp SPACE                 &kp ENTER       &trans     &kp RIGHT_ALT
             >;
 
             sensor-bindings =
@@ -124,10 +124,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N7  &kp N8   &kp N9  &kp KP_MINUS  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N4  &kp N5   &kp N6  &kp PLUS      &kp ASTERISK
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2   &kp N3  &kp ENTER     &kp EQUAL
-                        &trans  &trans  &trans                  &trans  &kp N0  &kp DOT
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
