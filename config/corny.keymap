@@ -5,62 +5,7 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        eisuu {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <15 16>;
-        };
-
-        pa {
-            bindings = <&pa>;
-            key-positions = <36 37>;
-        };
-
-        login {
-            bindings = <&login>;
-            key-positions = <22 23>;
-        };
-
-        kana {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <20 19>;
-        };
-
-        mail {
-            bindings = <&mail>;
-            key-positions = <10 11>;
-        };
-
-        to-tenkey {
-            bindings = <&tog 3>;
-            key-positions = <38 39 40>;
-        };
-    };
-
-    macros {
-        pa: pa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp P &kp A &kp S &kp W &kp A &kp R &kp D>;
-            label = "PA";
-        };
-
-        login: login {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp O &kp G &kp I &kp N &kp I &kp D>;
-            label = "LOGIN";
-        };
-
-        mail: mail {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp A &kp I &kp L &kp AT &kp M &kp A &kp I &kp L &kp DOT &kp J &kp P>;
-            label = "MAIL";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
