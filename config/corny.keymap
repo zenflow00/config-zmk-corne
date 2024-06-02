@@ -18,10 +18,10 @@
             //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E             &kp R          &kp T                       &kp Y                  &kp U        &kp I              &kp O    &kp P          &kp EQUAL
-&lt 1 RIGHT_CONTROL  &kp A  &kp S  &kp D             &kp F          &kp G                       &kp H                  &kp J        &kp K              &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHIFT           &kp Z  &kp X  &kp C             &kp V          &kp B         &mo 2  &mo 1  &kp N                  &kp M        &kp COMMA          &kp DOT  &kp FSLH       &kp RSHIFT
-                                   &kp LEFT_CONTROL  &kp BACKSPACE  &kp LEFT_GUI                &mt RIGHT_SHIFT ENTER  &lt 2 SPACE  &kp RIGHT_CONTROL
+&kp TAB              &kp Q  &kp W  &kp E         &kp R          &kp T                           &kp Y                    &kp U        &kp I         &kp O    &kp P          &kp EQUAL
+&lt 1 RIGHT_CONTROL  &kp A  &kp S  &kp D         &kp F          &kp G                           &kp H                    &kp J        &kp K         &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHIFT           &kp Z  &kp X  &kp C         &kp V          &kp B             &mo 2  &mo 1  &kp N                    &kp M        &kp COMMA     &kp DOT  &kp FSLH       &kp RSHIFT
+                                   &kp LEFT_GUI  &kp BACKSPACE  &kp LEFT_CONTROL                &mt RIGHT_CONTROL ENTER  &lt 2 SPACE  &kp LEFT_GUI
             >;
 
             sensor-bindings =
