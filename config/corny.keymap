@@ -7,6 +7,22 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        ww: ww {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N8 &kp N1 &kp N0 &kp LS(S) &kp E &kp N &kp H &kp A &kp LS(J) &kp E &kp T &kp A &kp LS(J) &kp E &kp T &kp A &kp AT &kp N1 &kp N2 &kp N3 &kp N4 &kp N5>;
+            label = "WW";
+        };
+
+        itsupport: itsupport {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(W) &kp LS(J) &kp LS(D) &kp N9 &kp N6 &kp LS(F) &kp LS(W) &kp E &kp LS(A) &kp Z>;
+            label = "ITSUPPORT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
