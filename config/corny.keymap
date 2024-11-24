@@ -11,15 +11,22 @@
         ww: ww {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N8 &kp N1 &kp N0 &kp LS(S) &kp E &kp N &kp H &kp A &kp LS(J) &kp E &kp T &kp A &kp LS(J) &kp E &kp T &kp A &kp AT &kp N1 &kp N2 &kp N3 &kp N4 &kp N5>;
+            bindings = <&kp N1 &kp N8 &kp N1 &kp N0 &kp LS(S) &kp E &kp N &kp H &kp A &kp LS(J) &kp E &kp T &kp A &kp LS(J) &kp E &kp T &kp A &kp AT &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp ENTER>;
             label = "WW";
         };
 
         itsupport: itsupport {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(W) &kp LS(J) &kp LS(D) &kp N9 &kp N6 &kp LS(F) &kp LS(W) &kp E &kp LS(A) &kp Z>;
+            bindings = <&none &kp LS(W) &kp LS(J) &kp LS(D) &kp N9 &kp N6 &kp LS(F) &kp LS(W) &kp E &kp LS(A) &kp Z &kp ENTER>;
             label = "ITSUPPORT";
+        };
+
+        loccal: loccal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N1 &kp N8 &kp N1 &kp N0 &kp S &kp E &kp N &kp H &kp A &kp ENTER>;
+            label = "LOCCAL";
         };
     };
 
@@ -36,12 +43,12 @@
             bindings = <
 &kp TAB              &kp Q  &kp W  &kp E         &kp R          &kp T                           &kp Y                    &kp U        &kp I         &kp O    &kp P          &kp EQUAL
 &lt 1 RIGHT_CONTROL  &kp A  &kp S  &kp D         &kp F          &kp G                           &kp H                    &kp J        &kp K         &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHIFT           &kp Z  &kp X  &kp C         &kp V          &kp B             &mo 2  &mo 1  &kp N                    &kp M        &kp COMMA     &kp DOT  &kp FSLH       &kp RSHIFT
+&kp LSHIFT           &kp Z  &kp X  &kp C         &kp V          &kp B             &to 0  &to 2  &kp N                    &kp M        &kp COMMA     &kp DOT  &kp FSLH       &kp RSHIFT
                                    &kp LEFT_GUI  &kp BACKSPACE  &kp LEFT_CONTROL                &mt RIGHT_CONTROL ENTER  &lt 2 SPACE  &kp LEFT_GUI
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
@@ -75,7 +82,7 @@
 &kp TAB    &kp EXCL      &kp AT  &kp HASH  &kp DLLR      &kp PRCNT                 &kp CARET       &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp SINGLE_QUOTE
 &kp ESC    &kp N1        &kp N2  &kp N3    &kp NUMBER_4  &kp N5                    &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp GRAVE
 &kp LSHFT  &kp NUMBER_6  &kp N7  &kp N8    &kp N9        &kp N0     &none  &trans  &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &kp TILDE
-                                 &kp LWIN  &itsupport    &ww                       &kp ENTER       &trans     &kp RIGHT_ALT
+                                 &loccal   &itsupport    &ww                       &kp ENTER       &trans     &kp RIGHT_ALT
             >;
 
             sensor-bindings =
